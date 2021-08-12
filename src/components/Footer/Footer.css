@@ -33,7 +33,7 @@
 }
 
 .footer-info p {
-  opacity: 50%;
+  opacity: 0.5;
   text-align: center;
 }
 
@@ -74,7 +74,7 @@
   height: 100%;
 }
 .copyright p {
-  opacity: 50%;
+  opacity: 0.5;
   font-weight: 700;
   margin: 48px 0;
 }

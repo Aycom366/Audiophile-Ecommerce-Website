@@ -21,14 +21,14 @@
   flex-direction: column;
 }
 .home-container-info h4 {
-  opacity: 49.64%;
+  opacity: 0.5;
   font-size: 14px;
   line-height: 19.12px;
   letter-spacing: 10px;
   font-weight: 400;
 }
 .home-container-info p {
-  opacity: 75%;
+  opacity: 0.75;
   width: 349px;
 }
 
@@ -141,7 +141,7 @@
 }
 .speaker-info p {
   width: 349px;
-  opacity: 75%;
+  opacity: .75;
 }
 
 .product-btn {
