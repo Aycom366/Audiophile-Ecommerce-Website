@@ -21,7 +21,11 @@
   flex-direction: column;
 }
 .home-container-info h4 {
+<<<<<<< HEAD
   opacity: 0.5;
+=======
+  
+>>>>>>> 8423f0c156a790a8906db1b5c39749780e82e546
   font-size: 14px;
   line-height: 19.12px;
   letter-spacing: 10px;
