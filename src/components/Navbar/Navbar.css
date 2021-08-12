@@ -1,0 +1,121 @@
+.nav {
+  height: auto;
+  width: 100%;
+  background-color: var(--black-background);
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-center {
+  max-width: 1400px;
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  padding: 32px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #bebbbb;
+  position: relative;
+}
+
+.navLinksContainer {
+  width: 429px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLinksContainer a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2px;
+  transition: var(--transition);
+  text-decoration: none;
+}
+.navLinksContainer a:hover {
+  transition: var(--transition);
+  color: var(--orange-background);
+}
+.nav-logo {
+  display: flex;
+  width: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bars {
+  display: none;
+}
+
+.bars span {
+  width: 20px;
+  height: 3px;
+  display: block;
+  margin: 5px 0;
+  background-color: var(--white-background);
+  transition: 0.3s ease-in-out;
+}
+
+.mobileNavLinks {
+  position: absolute;
+  top: -10090px;
+  left: 0;
+  height: auto;
+  width: 100%;
+  z-index: 9999;
+  background-color: var(--white-background);
+  transition: var(--transition);
+  opacity: 0;
+}
+
+.shownavs {
+  top: 94px;
+  opacity: 1;
+  transition: var(--transition);
+}
+@media screen and (max-width: 768px) {
+  .bars {
+    display: block;
+  }
+  .navLinksContainer {
+    display: none;
+  }
+  .cart {
+    flex-basis: 5%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-logo {
+    flex-basis: 40%;
+  }
+}
+
+.bars.is-active span:nth-child(2) {
+  opacity: 0;
+}
+.bars.is-active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.bars.is-active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media screen and (max-width: 600px) {
+  .cart {
+    flex-basis: 5%;
+  }
+  .nav-logo {
+    flex-basis: 65%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-logo {
+    flex-basis: 70%;
+  }
+}
