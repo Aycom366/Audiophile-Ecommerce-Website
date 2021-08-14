@@ -9,7 +9,7 @@ function Footer() {
       <section className="footer-container">
         <section className="footer-nav">
           <article className="footer-logo">
-            <Link>
+            <Link to="/">
               <img src={logo} alt="AudioPhile E-Commerce Website" />
             </Link>
           </article>

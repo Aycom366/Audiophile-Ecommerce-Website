@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/shared/desktop/logo.svg";
-import cart from "../../assets/shared/desktop/icon-cart.svg";
+import cartIcon from "../../assets/shared/desktop/icon-cart.svg";
 import { Link } from "react-router-dom";
 import Navs from "../../components/Navs";
 import { useGlobalContext } from "../../context";
@@ -22,7 +22,7 @@ function Navbar() {
           </div>
           <div className="logo">
             <Link to="/">
-              <img src={logo} alt="AudioPhile Logo" />
+              <img src={logo} alt="AudioPhile-Logo" />
             </Link>
           </div>
         </section>
@@ -43,7 +43,7 @@ function Navbar() {
         </section>
 
         <section className="cart">
-          <img src={cart} alt="Cart Image" />
+          <img src={cartIcon} alt="Cart-Image" />
         </section>
       </section>
     </nav>

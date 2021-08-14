@@ -2,7 +2,7 @@ import React from "react";
 
 function BestGear() {
   return (
-    <main>
+    <section className="bringing">
       <section className="bring-container">
         <aside className="bring-info">
           <h2>
@@ -19,7 +19,7 @@ function BestGear() {
         </aside>
         <aside className="bring-img"></aside>
       </section>
-    </main>
+    </section>
   );
 }
 

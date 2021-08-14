@@ -1,7 +1,8 @@
 import React from "react";
+import Hero from "./ProductHero/Hero";
 
 function Error() {
-  return <div>helo from error</div>;
+  return <Hero hero="black-background" title="Error"></Hero>;
 }
 
 export default Error;

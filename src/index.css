@@ -1,12 +1,15 @@
 @import "./components/Navbar/Navbar.css";
 @import "./pages/Home/Home.css";
 @import "./components/Footer/Footer.css";
+@import "./components/ProductHero/Hero.css";
+@import "./components/ProductHero/DetailsCategory.css";
 
 * {
   font-family: "Manrope", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
