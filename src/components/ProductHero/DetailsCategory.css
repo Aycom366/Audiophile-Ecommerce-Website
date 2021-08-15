@@ -50,9 +50,6 @@
   height: 0;
 }
 
-.category-false .category-info {
-  height: 308px;
-}
 .category-info h1 {
   text-transform: uppercase !important;
 }

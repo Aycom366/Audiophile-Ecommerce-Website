@@ -4,7 +4,7 @@ function BestGear() {
   return (
     <section className="bringing">
       <section className="bring-container">
-        <aside className="bring-info">
+        <aside data-aos="fade-in" className="bring-info">
           <h2>
             Bringing you the <span>best</span> audio gear
           </h2>
@@ -17,7 +17,7 @@ function BestGear() {
             make Audiophile the best place to buy your portable audio equipment.
           </p>
         </aside>
-        <aside className="bring-img"></aside>
+        <aside data-aos="fade-up" className="bring-img"></aside>
       </section>
     </section>
   );

@@ -6,7 +6,7 @@ import Navs from "../../components/Navs";
 import { useGlobalContext } from "../../context";
 
 function Navbar() {
-  const { isNavOpen, setIsNavOpen } = useGlobalContext();
+  const { isNavOpen, setIsNavOpen, getData } = useGlobalContext();
 
   return (
     <nav className="nav">
@@ -21,7 +21,7 @@ function Navbar() {
             <span></span>
           </div>
           <div className="logo">
-            <Link to="/">
+            <Link onClick={() => setIsNavOpen(false)} to="/">
               <img src={logo} alt="AudioPhile-Logo" />
             </Link>
           </div>

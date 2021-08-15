@@ -39,14 +39,12 @@ function HeadPhone() {
             }
             key={index}
           >
-            <Link to={url} className="btn orange-background">
+            <Link to={`/headphone/${name}`} className="btn orange-background">
               SEE PRODUCT
             </Link>
           </DetailsCategory>
         );
       })}
-      <CategoryNavigation />
-      <BestGear />
     </>
   );
 }

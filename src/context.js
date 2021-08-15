@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
+import data from "./data.json";
 
 //the context to use with the whle app
 const AppContext = React.createContext();
@@ -13,7 +14,17 @@ export const AppProvider = ({ children }) => {
 
   const [getWidth, setGetWidth] = useState(getwindowsDimension);
 
+  const getData = () => {
+    let newData = data.map((item) => {
+      return item;
+    });
+    return newData;
+  };
+
+  //get the window width to other global context
   useEffect(() => {
+    getData();
+
     const handleResize = () => {
       setGetWidth(getwindowsDimension());
     };
@@ -22,7 +33,7 @@ export const AppProvider = ({ children }) => {
   }, []);
 
   return (
-    <AppContext.Provider value={{ isNavOpen, setIsNavOpen, getWidth }}>
+    <AppContext.Provider value={{ isNavOpen, setIsNavOpen, getWidth, getData }}>
       {children}
     </AppContext.Provider>
   );

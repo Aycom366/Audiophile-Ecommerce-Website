@@ -9,17 +9,26 @@ function Home() {
       <section className="section-home">
         <section className="home-container">
           <section className="home-container-info">
-            <h4>NEW PRODUCT</h4>
-            <h1>
+            <h4 data-aos="fade-left" data-aos-delay="200">
+              NEW PRODUCT
+            </h4>
+            <h1 data-aos="fade-left" data-aos-delay="400">
               XX99 MARK 11
               <br />
               HEADPHONES
             </h1>
-            <p>
+            <p data-aos="fade-left" data-aos-delay="600">
               Experience natural, lifelike audio and exceptional build quality
               made for the passionate music enthusiast.
             </p>
-            <div className="home-btn btn">see product</div>
+            <Link
+              data-aos="fade-left"
+              data-aos-delay="800"
+              className="home-btn btn"
+              to="/headphone/xx99-mark-two-headphones"
+            >
+              see product
+            </Link>
           </section>
         </section>
       </section>
@@ -30,10 +39,10 @@ function Home() {
       {/* see product section */}
       <section className="speaker-Z">
         <section className="speaker-Z-container">
-          <div className="speaker-img">
+          <div data-aos="fade-down" className="speaker-img">
             <div className="img-speaker"></div>
           </div>
-          <div className="spkInfo">
+          <div data-aos="fade-up" className="spkInfo">
             <div className="speaker-info">
               <h1>
                 ZX9
@@ -44,7 +53,7 @@ function Home() {
                 Upgrade to premium speakers that are phenomenally built to
                 deliver truly remarkable sound.
               </p>
-              <Link to="/speaker" className="product-btn btn">
+              <Link to="/speaker/zx9-speaker" className="product-btn btn">
                 see product
               </Link>
             </div>
@@ -54,10 +63,18 @@ function Home() {
 
       <section className="section-Z7">
         <section className="Z7-container">
-          <article className="Z7-info">
-            <h2>Z7 SPEAKER</h2>
-            <Link>
-              <button className="btn Z7-btn">SEE PRODUCT</button>
+          <article data-aos="fade-left" className="Z7-info">
+            <h2 data-aos="fade-right" data-aos-delay="200">
+              ZX7 SPEAKER
+            </h2>
+            <Link to="/speaker/zx7-speaker">
+              <button
+                data-aos="fade-right"
+                data-aos-delay="400"
+                className="btn Z7-btn"
+              >
+                SEE PRODUCT
+              </button>
             </Link>
           </article>
         </section>
@@ -65,10 +82,16 @@ function Home() {
 
       <section className="earphone-Z">
         <section className="earphone-Z-container">
-          <article className="Z-earphone"></article>
-          <article className="earphone-container-info">
-            <h2>YX1 EARPHONES</h2>
-            <Link>
+          <article data-aos="fade-down" className="Z-earphone"></article>
+          <article data-aos="fade-up" className="earphone-container-info">
+            <h2 data-aos="fade-left" data-aos-delay="200">
+              YX1 EARPHONES
+            </h2>
+            <Link
+              to="/earphone/yx1-earphones"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
               <button className="btn earphone-btn">SEE PRODUCT</button>
             </Link>
           </article>

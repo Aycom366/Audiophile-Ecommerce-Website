@@ -9,7 +9,11 @@ function CategoryNavigation() {
   return (
     <section className="products">
       <section className="product-container">
-        <Link className="HomeCategoryContainer" to="/headphone">
+        <Link
+          data-aos="fade-right"
+          className="HomeCategoryContainer"
+          to="/headphone"
+        >
           <div className="homeimage">
             <div className="img-home">
               <img src={headphone} alt="HeadPhone" />
@@ -27,7 +31,11 @@ function CategoryNavigation() {
             </div>
           </div>
         </Link>
-        <Link className="HomeCategoryContainer" to="/speaker">
+        <Link
+          data-aos="fade-up"
+          className="HomeCategoryContainer"
+          to="/speaker"
+        >
           <div className="homeimage">
             <div className="img-home">
               <img src={speaker} alt="Speaker" />
@@ -45,7 +53,11 @@ function CategoryNavigation() {
             </div>
           </div>
         </Link>
-        <Link className="HomeCategoryContainer" to="/earphone">
+        <Link
+          data-aos="fade-up"
+          className="HomeCategoryContainer"
+          to="/earphone"
+        >
           <div className="homeimage">
             <div className="img-home">
               <img src={earphone} alt="EarPhones" />

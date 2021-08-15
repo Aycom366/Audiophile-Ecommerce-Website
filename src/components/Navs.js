@@ -7,10 +7,12 @@ import earphone from "../assets/shared/desktop/image-earphones.png";
 import { useGlobalContext } from "../context";
 
 function Navs() {
-  const { setIsNavOpen } = useGlobalContext();
+  const { IsNavOpen, setIsNavOpen } = useGlobalContext();
   return (
     <main>
       <Link
+        data-aos="fade-right"
+        data-aos-delay="5000"
         onClick={() => setIsNavOpen(false)}
         className="mobileCategoryContainer"
         to="/headphone"
@@ -33,6 +35,7 @@ function Navs() {
         </div>
       </Link>
       <Link
+        data-aos="zoom-in"
         onClick={() => setIsNavOpen(false)}
         className="mobileCategoryContainer"
         to="/speaker"
@@ -55,6 +58,7 @@ function Navs() {
         </div>
       </Link>
       <Link
+        data-aos="fade-left"
         onClick={() => setIsNavOpen(false)}
         className="mobileCategoryContainer"
         to="/earphone"

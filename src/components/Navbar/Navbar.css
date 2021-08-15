@@ -10,12 +10,13 @@
 
 .nav-center {
   max-width: 1400px;
-  width: 95vw;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   height: 100%;
-  padding: 32px 0;
+  padding: 32px 10px;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #bebbbb;
   position: relative;
 }
@@ -71,6 +72,7 @@
   background-color: var(--white-background);
   transition: var(--transition);
   opacity: 0;
+  overflow: visible !important;
 }
 
 .shownavs {
@@ -107,7 +109,7 @@
 
 @media screen and (max-width: 600px) {
   .cart {
-    flex-basis: 5%;
+    flex-basis: 10%;
   }
   .nav-logo {
     flex-basis: 65%;

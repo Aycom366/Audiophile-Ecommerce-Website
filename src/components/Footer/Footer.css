@@ -3,6 +3,7 @@
   height: auto;
   background: var(--black-background);
   color: white;
+  overflow-x: hidden;
 }
 
 .footer-container {

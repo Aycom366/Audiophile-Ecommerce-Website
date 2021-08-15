@@ -3,6 +3,7 @@
   height: auto;
   background-image: url(../../assets/home/desktop/image-hero.jpg);
   background-position: center;
+  overflow-x: hidden;
 }
 .home-container {
   max-width: 1400px;
@@ -43,6 +44,7 @@
   width: 100%;
   height: auto;
   margin: 127px 0 168px 0;
+  overflow-x: hidden;
 }
 
 .product-container {
@@ -75,6 +77,8 @@
 @media screen and (max-width: 600px) {
   .section-home {
     background-image: url(../../assets/home/mobile/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .home-container {
     padding: 198px 0px 112px 0px;
@@ -95,7 +99,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 48px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .speaker-Z-container {
@@ -175,6 +179,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 48px;
+  overflow-x: hidden;
 }
 
 .Z7-container {
@@ -295,6 +300,7 @@
 .earphone-Z {
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .earphone-Z-container {
@@ -324,6 +330,12 @@
   flex-direction: column;
   background: var(--ash-background);
 }
+.earphone-container-info h2 {
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 2px;
+}
+
 .earphone-btn {
   color: var(--black-background) !important;
   transition: var(--transition);
@@ -392,6 +404,11 @@
 @media screen and (max-width: 768px) {
   .Z-earphone {
     background-image: url(../../assets/home/tablet/image-earphones-yx1.jpg);
+  }
+
+  .earphone-container-info {
+    align-items: flex-start;
+    padding-left: 62px;
   }
   .bringing {
     margin: 92px 0;
