@@ -9,13 +9,13 @@ import { useGlobalContext } from "../context";
 function Navs() {
   const { IsNavOpen, setIsNavOpen } = useGlobalContext();
   return (
-    <main>
+    <>
       <Link
         data-aos="fade-right"
         data-aos-delay="5000"
         onClick={() => setIsNavOpen(false)}
         className="mobileCategoryContainer"
-        to="/headphone"
+        to="/headphones"
       >
         <div className="mobileimage">
           <div className="img">
@@ -38,7 +38,7 @@ function Navs() {
         data-aos="zoom-in"
         onClick={() => setIsNavOpen(false)}
         className="mobileCategoryContainer"
-        to="/speaker"
+        to="/speakers"
       >
         <div className="mobileimage">
           <div className="img">
@@ -61,7 +61,7 @@ function Navs() {
         data-aos="fade-left"
         onClick={() => setIsNavOpen(false)}
         className="mobileCategoryContainer"
-        to="/earphone"
+        to="/earphones"
       >
         <div className="mobileimage">
           <div className="img">
@@ -80,7 +80,7 @@ function Navs() {
           </div>
         </div>
       </Link>
-    </main>
+    </>
   );
 }
 

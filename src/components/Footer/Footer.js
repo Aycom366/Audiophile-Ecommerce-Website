@@ -16,9 +16,9 @@ function Footer() {
           <article className="footer-links">
             <section className="navLinksContainerFooter">
               <Link to="/">Home</Link>
-              <Link to="/speaker">Speaker</Link>
-              <Link to="/headphone">HeadPhone</Link>
-              <Link to="/earphone">EarPhone</Link>
+              <Link to="/speakers">Speaker</Link>
+              <Link to="/headphones">HeadPhone</Link>
+              <Link to="/earphones">EarPhone</Link>
             </section>
           </article>
         </section>

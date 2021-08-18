@@ -17,7 +17,7 @@ function Speaker() {
     <>
       <Hero hero="black-background" title="Speakers"></Hero>
       {speakers.map((speaker, index) => {
-        const { newProduct, name, info, url, image } = speaker;
+        const { newProduct, name, slug, info, url, image } = speaker;
         return (
           <DetailsCategory
             classInfo={`${
@@ -38,7 +38,7 @@ function Speaker() {
             }
             key={index}
           >
-            <Link to={`/speaker/${name}`} className="btn orange-background">
+            <Link to={`/speakers/${slug}`} className="btn orange-background">
               SEE PRODUCT
             </Link>
           </DetailsCategory>

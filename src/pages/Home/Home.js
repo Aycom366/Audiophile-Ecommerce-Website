@@ -25,7 +25,7 @@ function Home() {
               data-aos="fade-left"
               data-aos-delay="800"
               className="home-btn btn"
-              to="/headphone/xx99-mark-two-headphones"
+              to="/headphones/xx99-mark-two-headphones"
             >
               see product
             </Link>
@@ -53,7 +53,7 @@ function Home() {
                 Upgrade to premium speakers that are phenomenally built to
                 deliver truly remarkable sound.
               </p>
-              <Link to="/speaker/zx9-speaker" className="product-btn btn">
+              <Link to="/speakers/zx9-speaker" className="product-btn btn">
                 see product
               </Link>
             </div>
@@ -67,7 +67,7 @@ function Home() {
             <h2 data-aos="fade-right" data-aos-delay="200">
               ZX7 SPEAKER
             </h2>
-            <Link to="/speaker/zx7-speaker">
+            <Link to="/speakers/zx7-speaker">
               <button
                 data-aos="fade-right"
                 data-aos-delay="400"
@@ -88,7 +88,7 @@ function Home() {
               YX1 EARPHONES
             </h2>
             <Link
-              to="/earphone/yx1-earphones"
+              to="/earphones/yx1-earphones"
               data-aos="fade-left"
               data-aos-delay="400"
             >

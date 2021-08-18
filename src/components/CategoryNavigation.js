@@ -12,7 +12,7 @@ function CategoryNavigation() {
         <Link
           data-aos="fade-right"
           className="HomeCategoryContainer"
-          to="/headphone"
+          to="/headphones"
         >
           <div className="homeimage">
             <div className="img-home">
@@ -34,7 +34,7 @@ function CategoryNavigation() {
         <Link
           data-aos="fade-up"
           className="HomeCategoryContainer"
-          to="/speaker"
+          to="/speakers"
         >
           <div className="homeimage">
             <div className="img-home">
@@ -56,7 +56,7 @@ function CategoryNavigation() {
         <Link
           data-aos="fade-up"
           className="HomeCategoryContainer"
-          to="/earphone"
+          to="/earphones"
         >
           <div className="homeimage">
             <div className="img-home">

@@ -3,6 +3,12 @@
 @import "./components/Footer/Footer.css";
 @import "./components/ProductHero/Hero.css";
 @import "./components/ProductHero/DetailsCategory.css";
+@import "./pages/SingleProduct/SingleProduct.css";
+@import "./components/ProductCategory/ProductInfo.css";
+@import "./components/ProductFeatures/ProductFeatures.css";
+@import "./components/ProductGalleries/ProductGalleries.css";
+@import "./components/Like/Like.css";
+@import "./components/Cart/Cart.css";
 
 * {
   font-family: "Manrope", sans-serif;
@@ -21,6 +27,8 @@
   --ash-background: #f1f1f1;
   --border-radius: 8px;
   --transition: 0.5s ease-in-out;
+  --margin-buttom: 160px;
+  --margin-buttom-mobile: 88px;
 }
 
 h1 {
@@ -79,6 +87,13 @@ p {
   display: block;
   opacity: 0.9;
   transition: var(--transition);
+}
+
+/* Disable spinners in input type numbers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Shared css */

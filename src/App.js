@@ -18,12 +18,12 @@ function App() {
       <Overlay />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/speaker" component={Speaker} />
-        <Route exact path="/speaker/:slug" component={SingleProduct} />
-        <Route exact path="/earphone" component={EarPhone} />
-        <Route exact path="/earphone/:slug" component={SingleProduct} />
-        <Route exact path="/headphone" component={HeadPhone} />
-        <Route exact path="/headphone/:slug/" component={SingleProduct} />
+        <Route exact path="/speakers" component={Speaker} />
+        <Route exact path="/speakers/:slug" component={SingleProduct} />
+        <Route exact path="/earphones" component={EarPhone} />
+        <Route exact path="/earphones/:slug" component={SingleProduct} />
+        <Route exact path="/headphones" component={HeadPhone} />
+        <Route exact path="/headphones/:slug" component={SingleProduct} />
         <Route component={Error} />
       </Switch>
       <Footer />

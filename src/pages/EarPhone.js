@@ -17,7 +17,7 @@ function EarPhone() {
     <>
       <Hero hero="black-background" title="Earphones" />
       {earphones.map((earphone, index) => {
-        const { newProduct, name, info, url, image } = earphone;
+        const { newProduct, name, slug, info, url, image } = earphone;
         return (
           <DetailsCategory
             classInfo={`${
@@ -38,7 +38,7 @@ function EarPhone() {
             }
             key={index}
           >
-            <Link to={`/earphone/${name}`} className="btn orange-background">
+            <Link to={`/earphones/${slug}`} className="btn orange-background">
               SEE PRODUCT
             </Link>
           </DetailsCategory>

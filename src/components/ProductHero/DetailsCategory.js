@@ -1,5 +1,4 @@
 import React from "react";
-import { category } from "../../dataCategory.js";
 
 function DetailsCategory({
   children,
@@ -7,7 +6,6 @@ function DetailsCategory({
   newProduct,
   name,
   info,
-  url,
   image,
 }) {
   return (

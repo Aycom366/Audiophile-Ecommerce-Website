@@ -34,6 +34,7 @@ export const category = {
     {
       newProduct: true,
       name: "XX99 MARK II HEADPHONES",
+      slug: "xx99-mark-two-headphones",
       info: "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
       url: "/headphone",
       image: {
@@ -45,6 +46,7 @@ export const category = {
     {
       newProduct: false,
       name: "XX99 Mark I Headphones",
+      slug: "xx99-mark-one-headphones",
       info: "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
       url: "/headphone",
       image: {
@@ -56,6 +58,7 @@ export const category = {
     {
       newProduct: false,
       name: "XX59 Headphones",
+      slug: "xx59-headphones",
       info: "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
       url: "/headphone",
       image: {
@@ -69,6 +72,7 @@ export const category = {
     {
       newProduct: true,
       name: "ZX9 Speakers",
+      slug: "zx9-speaker",
       info: "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
       url: "/speaker",
       image: {
@@ -79,7 +83,8 @@ export const category = {
     },
     {
       newProduct: false,
-      name: "ZX7 Speaker",
+      name: "ZX7 Speakers",
+      slug: "zx7-speaker",
       info: "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
       url: "/speaker",
       image: {
@@ -92,7 +97,8 @@ export const category = {
   earphones: [
     {
       newProduct: true,
-      name: "YX1 WIRELESS EARPHONES",
+      name: "YX1 Wireless Earphones",
+      slug: "yx1-earphones",
       info: "STailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
       url: "/earphone",
       image: {
