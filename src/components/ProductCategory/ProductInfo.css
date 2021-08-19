@@ -3,6 +3,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: var(--margin-buttom);
+}
+.productCart > * {
   overflow: hidden;
 }
 h1 {

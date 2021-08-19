@@ -120,6 +120,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 @media screen and (min-width: 600px) {
   .mobileNavLinks {
@@ -163,6 +164,15 @@
   }
   .nav-logo {
     flex-basis: 65%;
+  }
+  .cart .amount {
+    top: -70%;
+    right: 0;
+    height: 20px;
+    width: 20px;
+  }
+  .cart-container {
+    width: 100%;
   }
 }
 

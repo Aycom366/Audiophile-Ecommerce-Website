@@ -10,11 +10,11 @@ function ProductInfo({ Products }) {
   const addToCart = () => {
     const newItem = { price, image, name, slug, quantity: QuantityValue };
 
-    //i just wrote this, i havent understnd how it works
     let newItems = CartInfo.find((item) => item.slug === slug);
     if (newItems) {
       const newQuantity = newItems.quantity + QuantityValue;
       const newQuantityItem = { ...newItems, quantity: newQuantity };
+      //i just wrote this, i havent understnd how it works
       setCartInfo(() => {
         return CartInfo.map((x) => (x.slug === slug ? newQuantityItem : x));
       });

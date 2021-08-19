@@ -24,7 +24,7 @@ function SingleProduct() {
         <div className="error-container contain">
           <h1 data-aos="fade-left">No such Product could be found...</h1>
           <Link
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-delay="200"
             to="/"
             className="btn orange-background"
@@ -36,7 +36,7 @@ function SingleProduct() {
     );
   } else {
     return (
-      <>
+      <main style={{ overflow: "hidden" }}>
         {/* Go backk button section */}
         <section data-aos="fade-left" className="go-back">
           <div className=" contain">
@@ -58,7 +58,7 @@ function SingleProduct() {
 
         <CategoryNavigation />
         <BestGear />
-      </>
+      </main>
     );
   }
 }
