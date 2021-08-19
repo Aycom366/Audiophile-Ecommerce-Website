@@ -8,6 +8,7 @@
 
 .cartcontainer {
   width: 100%;
+  overflow-y: visible;
 }
 
 .cartFooter {
@@ -32,6 +33,7 @@
   font-weight: 400;
   opacity: 0.5;
   line-height: 25px;
+  background-color: transparent;
 }
 
 .cartFooter h5 {

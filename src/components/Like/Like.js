@@ -3,7 +3,7 @@ import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
 
 function Like({ Products }) {
-  const { others, category, slug } = Products;
+  const { others, category } = Products;
   const { getWidth } = useGlobalContext();
   return (
     <section className="like">

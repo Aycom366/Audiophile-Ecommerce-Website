@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import logo from "../../assets/shared/desktop/logo.svg";
 import cartIcon from "../../assets/shared/desktop/icon-cart.svg";
 import { Link } from "react-router-dom";
@@ -7,21 +7,8 @@ import { useGlobalContext } from "../../context";
 import Cart from "../Cart/Cart";
 
 function Navbar() {
-  const {
-    isNavOpen,
-    setIsNavOpen,
-    setIsCartOpen,
-    isCartOpen,
-    getWidth,
-    cartLength,
-  } = useGlobalContext();
-
-  //if nav is open after exceding 768px
-  useEffect(() => {
-    if (getWidth > 768 && isNavOpen === true) {
-      setIsNavOpen(false);
-    }
-  }, [getWidth]);
+  const { isNavOpen, setIsNavOpen, setIsCartOpen, isCartOpen, CartInfo } =
+    useGlobalContext();
 
   return (
     <nav className="nav">
@@ -60,7 +47,7 @@ function Navbar() {
         <section onClick={() => setIsCartOpen(!isCartOpen)} className="cart">
           <img src={cartIcon} alt="Cart-Image" />
           <p onClick={() => setIsCartOpen(!isCartOpen)} className="amount">
-            {cartLength}
+            {CartInfo.length}
           </p>
         </section>
 
