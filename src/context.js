@@ -31,8 +31,6 @@ const AppProvider = ({ children }) => {
 
   const [isView, setIsView] = useState(false);
 
-  const [IsLess, setIsLess] = useState(false);
-
   //set navOpen to false if the screen is more than 768
   useEffect(() => {
     if (getWidth > 768 && isNavOpen === true) {
@@ -132,8 +130,6 @@ const AppProvider = ({ children }) => {
         isNavOpen,
         isCartOpen,
         isView,
-        IsLess,
-        setIsLess,
         setIsView,
         setIsCartOpen,
         setIsNavOpen,

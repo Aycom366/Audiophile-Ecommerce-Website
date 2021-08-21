@@ -9,16 +9,8 @@ import check from "../../assets/cart/iconmonstr-check-mark-circle-thin.svg";
 function Checkout() {
   const history = useHistory();
 
-  const {
-    CartInfo,
-    setCartInfo,
-    getTotals,
-    grandTotals,
-    isView,
-    setIsView,
-    IsLess,
-    setIsLess,
-  } = useGlobalContext();
+  const { CartInfo, setCartInfo, getTotals, grandTotals, isView, setIsView } =
+    useGlobalContext();
 
   const [results, setresults] = useState(false);
 
@@ -42,11 +34,13 @@ function Checkout() {
   const onSubmit = (data) => {
     setresult(JSON.stringify(data));
     setIsView(true);
+    window.scrollTo(0, 0);
   };
 
   const clearAll = () => {
     setIsView(false);
     setCartInfo([]);
+    reset();
   };
 
   if (CartInfo.length < 1) {
@@ -369,22 +363,44 @@ function Checkout() {
                   );
                 })}
                 <div className="cal">
-                  <p>TOTAL</p>
-                  <h4>$ {getTotals()}</h4>
+                  <p data-aos="fade-right" data-aos-delay="100">
+                    TOTAL
+                  </p>
+                  <h4 data-aos="fade-left" data-aos-delay="200">
+                    $ {getTotals()}
+                  </h4>
                 </div>
                 <div className="cal">
-                  <p>SHIPPING</p>
-                  <h4>$ 50</h4>
+                  <p data-aos="fade-right" data-aos-delay="300">
+                    SHIPPING
+                  </p>
+                  <h4 data-aos="fade-left" data-aos-delay="400">
+                    $ 50
+                  </h4>
                 </div>
                 <div className="cal">
-                  <p>VAT (INCLUDED)</p>
-                  <h4>$ {grandTotals.vatAmount}</h4>
+                  <p data-aos="fade-right" data-aos-delay="500">
+                    VAT (INCLUDED)
+                  </p>
+                  <h4 data-aos="fade-left" data-aos-delay="600">
+                    $ {grandTotals.vatAmount}
+                  </h4>
                 </div>
                 <div className="cal grand">
-                  <p>GRAND TOTAL)</p>
-                  <h4 className="orange">$ {getTotals()}</h4>
+                  <p data-aos="fade-right" data-aos-delay="700">
+                    GRAND TOTAL)
+                  </p>
+                  <h4
+                    data-aos="fade-left"
+                    data-aos-delay="800"
+                    className="orange"
+                  >
+                    $ {grandTotals.grandtotal}
+                  </h4>
                 </div>
                 <button
+                  data-aos="fade-up"
+                  data-aos-delay="900"
                   className="btns orange-background"
                   style={{ width: "100%" }}
                   type="submit"
@@ -469,7 +485,7 @@ function Checkout() {
               <div className="grandingTotal">
                 <div className="priceInformation">
                   <h4>Grand Total</h4>
-                  <h4>$ {getTotals()}</h4>
+                  <h4>$ {grandTotals.grandtotal}</h4>
                 </div>
               </div>
             </article>

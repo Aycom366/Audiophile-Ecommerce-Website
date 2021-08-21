@@ -7,13 +7,23 @@ import { useGlobalContext } from "../../context";
 import Cart from "../Cart/Cart";
 
 function Navbar() {
-  const { isNavOpen, setIsNavOpen, setIsCartOpen, isCartOpen, CartInfo } =
-    useGlobalContext();
+  const {
+    isNavOpen,
+    setIsNavOpen,
+    setIsCartOpen,
+    isView,
+    isCartOpen,
+    CartInfo,
+  } = useGlobalContext();
 
   return (
     <nav className="nav">
       <section
-        className={`${isNavOpen ? "nav-center" : "nav-center nav-active"}`}
+        className={`${
+          isNavOpen || isCartOpen || isView
+            ? "nav-center"
+            : "nav-center nav-active"
+        }`}
       >
         <section className="nav-logo">
           <div

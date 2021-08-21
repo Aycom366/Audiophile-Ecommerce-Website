@@ -13,7 +13,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: -100000%;
+  top: -100000;
   opacity: 0;
   transition: var(--transition);
   display: grid;
@@ -88,7 +88,7 @@
 
 .showthanks {
   top: 0;
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
   opacity: 1;
 }
 

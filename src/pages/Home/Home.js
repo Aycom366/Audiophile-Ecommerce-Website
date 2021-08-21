@@ -2,11 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CategoryNavigation from "../../components/CategoryNavigation";
 import BestGear from "../../components/BestGear";
-import { useGlobalContext } from "../../context";
 
 function Home() {
-  const { getWidth } = useGlobalContext();
-  console.log(getWidth);
   return (
     <>
       <section className="section-home">
