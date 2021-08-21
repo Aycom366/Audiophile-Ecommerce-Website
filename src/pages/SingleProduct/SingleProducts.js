@@ -1,12 +1,14 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
-import { Link, useHistory, useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import CategoryNavigation from "../../components/CategoryNavigation";
 import BestGear from "../../components/BestGear";
 import ProductInfo from "../../components/ProductCategory/ProductInfo";
 import ProductFeatures from "../../components/ProductFeatures/ProductFeatures";
 import ProductGalleries from "../../components/ProductGalleries/ProductGalleries";
 import Like from "../../components/Like/Like";
+import GoBack from "../../components/GoBack";
+import NoError from "../../components/NoError";
 
 function SingleProduct() {
   //firstly get the name coming from categories page
@@ -19,30 +21,12 @@ function SingleProduct() {
 
   let Products = getProduct(slug);
   if (!Products) {
-    return (
-      <section className="error">
-        <div className="error-container contain">
-          <h1 data-aos="fade-left">No such Product could be found...</h1>
-          <Link
-            data-aos="fade-up"
-            data-aos-delay="200"
-            to="/"
-            className="btn orange-background"
-          >
-            Return Home
-          </Link>
-        </div>
-      </section>
-    );
+    return <NoError title="No Such Product could be found..." />;
   } else {
     return (
       <main style={{ overflow: "hidden" }}>
         {/* Go backk button section */}
-        <section data-aos="fade-left" className="go-back">
-          <div className=" contain">
-            <button onClick={history.goBack}>Go Back</button>
-          </div>
-        </section>
+        <GoBack history={history} />
 
         {/* Product Info and adding to cart */}
         <ProductInfo Products={Products} />

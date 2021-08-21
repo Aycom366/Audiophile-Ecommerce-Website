@@ -8,7 +8,6 @@
 
 .cartcontainer {
   width: 100%;
-  overflow-y: visible;
 }
 
 .cartFooter {
@@ -58,20 +57,15 @@
   object-fit: cover;
 }
 
-.cartitems p:nth-child(1) {
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 700;
-}
-.cartitems p:nth-child(2) {
+.cartitems p {
   font-size: 14px;
-  line-height: 25px;
   font-weight: 700;
 }
 
 .name {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .cartInfo {
@@ -103,4 +97,11 @@
   outline: none;
   height: 32px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .cartitems p {
+    font-size: 13px;
+    font-weight: 700;
+  }
 }

@@ -2,11 +2,11 @@ import React from "react";
 import { useGlobalContext } from "../context";
 
 function Overlay() {
-  const { isNavOpen, isCartOpen } = useGlobalContext();
+  const { isNavOpen, isCartOpen, isView } = useGlobalContext();
   return (
     <div
       className={`${
-        isNavOpen || isCartOpen ? "overlay overlay-active" : "overlay"
+        isNavOpen || isCartOpen || isView ? "overlay overlay-active" : "overlay"
       }`}
     ></div>
   );

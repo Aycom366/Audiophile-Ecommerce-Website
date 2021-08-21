@@ -4,6 +4,8 @@
 @import "./components/ProductHero/Hero.css";
 @import "./components/ProductHero/DetailsCategory.css";
 @import "./pages/SingleProduct/SingleProduct.css";
+@import "./pages/CheckOut/Checkout.css";
+@import "./pages/CheckOut/pretty.min.css";
 @import "./components/ProductCategory/ProductInfo.css";
 @import "./components/ProductFeatures/ProductFeatures.css";
 @import "./components/ProductGalleries/ProductGalleries.css";
@@ -50,7 +52,7 @@ p {
   line-height: 25px;
 }
 
-.btn {
+.btns {
   font-weight: 700;
   font-size: 13px;
   line-height: 17.76px;

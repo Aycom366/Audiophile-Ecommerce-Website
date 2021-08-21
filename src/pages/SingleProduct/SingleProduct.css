@@ -57,3 +57,10 @@
     min-height: calc(100vh - 532.33px);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .go-back {
+    margin-top: 128px;
+    margin-bottom: 28px;
+  }
+}

@@ -39,7 +39,7 @@ function HeadPhone() {
             }
             key={index}
           >
-            <Link to={`/headphones/${slug}`} className="btn orange-background">
+            <Link to={`/headphones/${slug}`} className="btns orange-background">
               SEE PRODUCT
             </Link>
           </DetailsCategory>

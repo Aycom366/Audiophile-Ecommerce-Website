@@ -39,7 +39,7 @@ function Like({ Products }) {
                 </div>
                 <h3>{name}</h3>
                 <Link
-                  className="btn orange-background"
+                  className="btns orange-background"
                   to={`/${category}/${slug}`}
                 >
                   SEE PRODUCT

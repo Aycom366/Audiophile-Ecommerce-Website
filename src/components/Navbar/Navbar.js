@@ -12,7 +12,9 @@ function Navbar() {
 
   return (
     <nav className="nav">
-      <section className="nav-center">
+      <section
+        className={`${isNavOpen ? "nav-center" : "nav-center nav-active"}`}
+      >
         <section className="nav-logo">
           <div
             onClick={() => setIsNavOpen(!isNavOpen)}

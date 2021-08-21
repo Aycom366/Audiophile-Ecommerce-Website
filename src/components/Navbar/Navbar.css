@@ -19,6 +19,9 @@
   z-index: 999;
   right: 0;
   border-radius: var(--border-radius);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .show-cart-container {
@@ -36,8 +39,11 @@
   padding: 32px 0;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #bebbbb;
   position: relative;
+}
+
+.nav-active {
+  border-bottom: 1px solid #bebbbb;
 }
 
 .navLinksContainer {
@@ -179,6 +185,7 @@
   }
   .cart-container {
     width: 100%;
+    padding: 31px 15px;
   }
 }
 

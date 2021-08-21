@@ -38,7 +38,7 @@ function Speaker() {
             }
             key={index}
           >
-            <Link to={`/speakers/${slug}`} className="btn orange-background">
+            <Link to={`/speakers/${slug}`} className="btns orange-background">
               SEE PRODUCT
             </Link>
           </DetailsCategory>

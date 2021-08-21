@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CategoryNavigation from "../../components/CategoryNavigation";
 import BestGear from "../../components/BestGear";
+import { useGlobalContext } from "../../context";
 
 function Home() {
+  const { getWidth } = useGlobalContext();
+  console.log(getWidth);
   return (
     <>
       <section className="section-home">
@@ -24,7 +27,7 @@ function Home() {
             <Link
               data-aos="fade-left"
               data-aos-delay="800"
-              className="home-btn btn"
+              className="home-btn btns"
               to="/headphones/xx99-mark-two-headphones"
             >
               see product
@@ -53,7 +56,7 @@ function Home() {
                 Upgrade to premium speakers that are phenomenally built to
                 deliver truly remarkable sound.
               </p>
-              <Link to="/speakers/zx9-speaker" className="product-btn btn">
+              <Link to="/speakers/zx9-speaker" className="product-btn btns">
                 see product
               </Link>
             </div>
@@ -71,7 +74,7 @@ function Home() {
               <button
                 data-aos="fade-right"
                 data-aos-delay="400"
-                className="btn Z7-btn"
+                className="btns Z7-btn"
               >
                 SEE PRODUCT
               </button>
@@ -92,7 +95,7 @@ function Home() {
               data-aos="fade-left"
               data-aos-delay="400"
             >
-              <button className="btn earphone-btn">SEE PRODUCT</button>
+              <button className="btns earphone-btn">SEE PRODUCT</button>
             </Link>
           </article>
         </section>

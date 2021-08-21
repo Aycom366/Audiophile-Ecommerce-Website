@@ -1,10 +1,14 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
+import { Link } from "react-router-dom";
 
 function Cart() {
-  const { clearCart, CartInfo, getTotals, toggleQuantity } = useGlobalContext();
+  const { clearCart, setIsCartOpen, CartInfo, getTotals, toggleQuantity } =
+    useGlobalContext();
   if (CartInfo < 1) {
-    return <h4>cart is currently empty</h4>;
+    return (
+      <p style={{ fontWeight: "400", margin: "0" }}>cart is currently empty</p>
+    );
   } else {
     return (
       <article className="cartcontainer">
@@ -53,7 +57,13 @@ function Cart() {
           <h5 className="cartAlike">Total</h5>
           <h5>${getTotals()}</h5>
         </div>
-        <button className="btn orange-background">Checkout</button>
+        <Link
+          onClick={() => setIsCartOpen(false)}
+          to="/checkout"
+          className="btns orange-background"
+        >
+          Checkout
+        </Link>
       </article>
     );
   }

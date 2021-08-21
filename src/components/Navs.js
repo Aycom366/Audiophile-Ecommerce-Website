@@ -7,7 +7,7 @@ import earphone from "../assets/shared/desktop/image-earphones.png";
 import { useGlobalContext } from "../context";
 
 function Navs() {
-  const { IsNavOpen, setIsNavOpen } = useGlobalContext();
+  const { setIsNavOpen } = useGlobalContext();
   return (
     <>
       <Link

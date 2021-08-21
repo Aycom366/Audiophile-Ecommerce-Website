@@ -78,7 +78,7 @@ function ProductInfo({ Products }) {
                   +
                 </button>
               </div>
-              <button onClick={addToCart} className="button">
+              <button onClick={addToCart} className="buttons">
                 Add to cart
               </button>
             </div>

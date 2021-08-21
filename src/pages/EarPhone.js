@@ -38,7 +38,7 @@ function EarPhone() {
             }
             key={index}
           >
-            <Link to={`/earphones/${slug}`} className="btn orange-background">
+            <Link to={`/earphones/${slug}`} className="btns orange-background">
               SEE PRODUCT
             </Link>
           </DetailsCategory>

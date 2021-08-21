@@ -9,6 +9,7 @@ import HeadPhone from "./pages/HeadPhone";
 import Speaker from "./pages/Speaker";
 import Error from "./components/Error";
 import ScrollToTop from "./ScrollToTop";
+import Checkout from "./pages/CheckOut/Checkout";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/earphones" component={EarPhone} />
         <Route exact path="/earphones/:slug" component={SingleProduct} />
         <Route exact path="/headphones" component={HeadPhone} />
+        <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/headphones/:slug" component={SingleProduct} />
         <Route component={Error} />
       </Switch>

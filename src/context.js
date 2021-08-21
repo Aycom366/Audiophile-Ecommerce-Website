@@ -4,11 +4,6 @@ import data from "./data";
 //the context to use with the whle app
 const AppContext = React.createContext();
 
-const getwindowsDimension = () => {
-  const { innerWidth: width } = window;
-  return width;
-};
-
 const getLocalStorage = () => {
   let cartList = localStorage.getItem("cart");
   if (cartList) {
@@ -16,6 +11,11 @@ const getLocalStorage = () => {
   } else {
     return [];
   }
+};
+
+const getwindowsDimension = () => {
+  const { innerWidth: width } = window;
+  return width;
 };
 
 const AppProvider = ({ children }) => {
@@ -27,12 +27,27 @@ const AppProvider = ({ children }) => {
 
   const [getWidth, setGetWidth] = useState(getwindowsDimension);
 
+  const [grandTotals, setgrandTotals] = useState({});
+
+  const [isView, setIsView] = useState(false);
+
+  const [IsLess, setIsLess] = useState(false);
+
   //set navOpen to false if the screen is more than 768
   useEffect(() => {
     if (getWidth > 768 && isNavOpen === true) {
       setIsNavOpen(false);
     }
   }, [getWidth]);
+
+  useEffect(() => {
+    function handleResize() {
+      setGetWidth(getwindowsDimension());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   //clearing the cart
   const clearCart = () => {
@@ -77,6 +92,14 @@ const AppProvider = ({ children }) => {
     return product;
   };
 
+  //calcuating the grandTotal
+  const grandTotal = () => {
+    let vatAmount = parseFloat(getTotals() * 0.2).toFixed(2);
+    let grandtotal = parseFloat(getTotals() + 50);
+
+    return setgrandTotals({ vatAmount, grandtotal });
+  };
+
   const getTotals = () => {
     let totals = CartInfo.reduce((total, cartItem) => {
       //the cartItem in this case will be current object mapping on
@@ -87,25 +110,20 @@ const AppProvider = ({ children }) => {
       total += itemTotal;
       return total;
     }, 0);
+
     return totals;
   };
 
-  //get the window width to other global context
   useEffect(() => {
     //get values in the json data when the app is first loaded
     getData();
-
-    const handleResize = () => {
-      setGetWidth(getwindowsDimension());
-    };
-    const resizing = window.addEventListener("resize", handleResize);
-    return () => resizing();
   }, []);
 
   //an useFfect to update localstorage
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(CartInfo));
     getTotals();
+    grandTotal();
   }, [CartInfo]);
 
   return (
@@ -113,6 +131,10 @@ const AppProvider = ({ children }) => {
       value={{
         isNavOpen,
         isCartOpen,
+        isView,
+        IsLess,
+        setIsLess,
+        setIsView,
         setIsCartOpen,
         setIsNavOpen,
         getWidth,
@@ -122,6 +144,7 @@ const AppProvider = ({ children }) => {
         clearCart,
         toggleQuantity,
         getTotals,
+        grandTotals,
       }}
     >
       {children}
