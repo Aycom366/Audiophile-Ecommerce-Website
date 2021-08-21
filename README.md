@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+AudioPhile E-Commerce Website was created using React, FaceBook made Javascript Framework. Template design downloaded from Frontend Mentor as a pro subscription.
+Fews of the technologies used for this Project is
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. The React Hook Form: The React Hook form is one of the library used for this project. React Hook Forms basically helps with validations and avoid controlled input. Validations are done onTrigger, either text change, tab change, onchange itself. This is really a great tool as it helps in developing the projec more faster.
 
-## Available Scripts
+2. Pretty-Checkbox: The Pretty checkbox is a css file downloaded from dev's github account. As we all know, it somehow hard to style native radio buttons including checboxes. so this library was used as well to style radio buttons used in the project
 
-In the project directory, you can run:
+one of the features of this project is that it used localstorage to save items that as been added into cart. no matter how refreshed your refresing your browser, items added would still be inside localstorage unless you remove them manually or when purchase has been made successfully.
 
-### `npm start`
+React hooks used are
+  1. useState
+  2. useEffect
+  3. useContext: managing data globally. equivalent to the redux when joined with the useReducer hooks
+  4. useHistory,Link coming from react-router-dom library
+  5. json data used locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Animate on scroll was not also included as it was used to animate contents in the applications.
