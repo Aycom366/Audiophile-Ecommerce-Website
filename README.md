@@ -1,5 +1,5 @@
 AudioPhile E-Commerce Website was created using React, FaceBook made Javascript Framework. Template design downloaded from Frontend Mentor as a pro subscription.
-Fews of the technologies used for this Project is
+Fews of the technologies used for this Project are:
 
 1. The React Hook Form: The React Hook form is one of the library used for this project. React Hook Forms basically helps with validations and avoid controlled input. Validations are done onTrigger, either text change, tab change, onchange itself. This is really a great tool as it helps in developing the projec more faster.
 
