@@ -185,11 +185,8 @@
   }
   .cart-container {
     width: 100%;
-<<<<<<< HEAD
     padding: 31px 15px;
-=======
-padding:31px 15px;
->>>>>>> 031800109f1517de847d2a37fe03000925e3efc6
+    padding: 31px 15px;
   }
 }
 
