@@ -14,4 +14,4 @@ React hooks used are
   4. useHistory,Link coming from react-router-dom library
   5. json data used locally
 
-3. Animate on scroll was not also included as it was used to animate contents in the applications.
+3. Animate on scroll was not also excluded as it was used to animate contents in the applications.
